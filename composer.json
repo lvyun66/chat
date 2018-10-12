@@ -1,0 +1,18 @@
+{
+    "name": "lvyun/chat",
+    "description": "Small chat program",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lvyun",
+            "email": "yunlv.go@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Chat\\": "./src"
+        }
+    }
+}
