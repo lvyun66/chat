@@ -1,0 +1,82 @@
+#!/usr/bin/env php
+<?php
+
+// function test()
+// {
+//     global $age;
+//     $age = 25;
+// }
+//
+// function test2()
+// {
+//     global $age;
+//     $age = 30;
+//     var_dump($age);
+// }
+//
+// test();
+// var_dump($age);
+//
+// // $age1 = 27;
+// test2();
+// var_dump($GLOBALS['age']);
+
+
+// $name = 'lvyun';
+//
+// function say() {
+//     echo "I am {$GLOBALS['name']}";
+// }
+// say();
+// $name = 'lvyun';
+
+// function say() {
+//     global  $name;
+//     echo "I am {$name}\n";
+//     $name = 'lvyun-inner';
+// }
+// say();
+// echo "I am {$name}\n";
+// $name = 'lvyun-outer';
+// echo "I am {$name}\n";
+
+// $name = 'lvyun';
+// function change()
+// {
+//     global $name;
+//     echo "(1)I am {$name}\n";
+//     unset($name);
+//     echo "(2)I am {$name}\n";
+// }
+//
+// change();
+// echo "(3)I am {$name}\n";
+
+
+// $name = 'lvyun';
+// function change()
+// {
+//     echo "(1)I am {$GLOBALS['name']}\n";
+//     unset($GLOBALS['name']);
+//     echo "(2)I am {$GLOBALS['name']}\n";
+// }
+//
+// change();
+// echo "(3)I am {$name}\n";
+
+// $name = 'lvyun';
+// function change()
+// {
+//     global $name;
+//     echo "(1)I am {$name}\n";
+//     echo "(2)I am {$GLOBALS['name']}\n";
+//     unset($GLOBALS['name']);
+//     echo "(3)I am {$name}\n";
+//     echo "(4)I am {$GLOBALS['name']}\n";
+// }
+//
+// change();
+// echo "(5)I am {$name}\n";
+
+
+print_r(token_get_all("<?php echo 'hello world!';"));

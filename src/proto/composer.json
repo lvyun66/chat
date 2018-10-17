@@ -1,6 +1,6 @@
 {
-    "name": "lvyun/chat",
-    "description": "Small chat program",
+    "name": "lvyun/proto",
+    "description": "proto",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -9,12 +9,11 @@
             "email": "yunlv.go@gmail.com"
         }
     ],
-    "require": {
-        "google/protobuf": "3.6.1"
-    },
+    "require": {},
     "autoload": {
         "psr-4": {
-            "Chat\\": "./src"
+            "Chat\\": "./Chat",
+            "GPBMetadata\\": "./GPBMetadata"
         }
     }
 }

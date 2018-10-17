@@ -4,5 +4,5 @@
 require __DIR__ . '/vendor/autoload.php';
 require __DIR__ . '/src/proto/vendor/autoload.php';
 
-$serv = new \Chat\Server('127.0.0.1', 9501);
-$serv->start();
+$client = new \Chat\ClientAsync();
+$client->start();

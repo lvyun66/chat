@@ -2,7 +2,7 @@
 <?php
 
 require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . '/src/proto/vendor/autoload.php';
 
 $client = new \Chat\Client();
-$client->sendMessage('123');
-$client->close();
+$client->start();

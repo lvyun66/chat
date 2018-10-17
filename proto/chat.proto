@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package chat.proto;
+option php_namespace = "Chat\\proto";
+option go_package = "chat";
+
+message ChatRequest {
+    RequestType type = 1;
+    uint32 sending_time = 2;
+    Body body = 3;
+    Info info = 4;
+}
+
+message Body {
+    string msg = 1;
+    string to = 2;
+}
+
+message Info {
+    string username = 1;
+    string gender = 2;
+    uint32 age = 3;
+}
+
+enum RequestType {
+    RequestType_UNKNOWN = 0;
+    RequestType_LOGIN = 1;
+    RequestType_MESSAGE = 2;
+    RequestType_FILE = 3;
+}
+
+message ChatResponse {
+
+}
+
+
